@@ -1,9 +1,9 @@
-﻿var Dado = new Dice(6);
+﻿var dice = new Dice(6);
 var UserInput = new DiceInputHandler();
-var jugador = new PlayerState();
+var player = new PlayerState();
 var PlayingGame = new DiceGame();
 
-PlayingGame.RunningGame(Dado, UserInput, jugador);
+PlayingGame.RunningGame(dice, UserInput, player);
 Console.ReadKey();
 public class DiceGame
 {
